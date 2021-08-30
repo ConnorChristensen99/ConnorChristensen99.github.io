@@ -1,0 +1,24 @@
+h1 {
+    color:blue
+}
+
+nav ul li {
+    float: left;
+    list-style-type: none;
+}
+
+nav ul a {
+    display: block;
+    padding: .7rem
+}
+
+main h1 {
+    clear: both;
+}
+main img {
+    float: right;
+}
+
+footer {
+    text-align: center;
+}
