@@ -1,0 +1,36 @@
+
+
+   nav ul {
+        display: flex;
+        
+        ul li {
+        flex-basis: 25%;
+       
+    }
+
+    a {
+        padding: .6rem 1rem;
+        }
+
+}
+
+div.headerinfo {
+    flex-wrap: wrap;
+}
+
+    main figure {
+        float: right;
+        width: 48%;
+        margin-left: 2%;
+        padding-bottom: 2%;
+    }
+
+    div.news {
+        clear: both;
+        column-count: 2;
+        column-rule: 1px black solid;
+        padding-top: 3rem;
+    }
+
+
+

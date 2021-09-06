@@ -1,0 +1,115 @@
+@media only screen and (max-width: 560px) {
+    .h2hidden {
+      display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+  }
+
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $regularWeight;
+}
+
+
+
+/* header rules */
+header {
+    background-color: rgb(59, 147, 199);
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+
+    figure {
+        margin: 0;
+        padding-right: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: $heavyWeight;
+    }//end of h1
+
+    h2 {
+        margin: 0;
+        font-weight: $regularWeight;
+    }//end of h2
+
+} //end of header
+
+
+
+/* navigation rules */
+nav {
+    background-color: black;
+
+ ul {
+    margin: 0;
+    padding: 0;
+    }
+
+ li {
+    list-style-type: none;
+    }
+
+ li.active {
+    background-color: rgb(182, 178, 178);
+    }
+
+ a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+    }
+
+ a:hover {background-color: grey;}
+
+}//end of nav
+
+
+/* main rules */
+main {
+    padding: 1rem 2%;
+    display: block;
+
+ h1 {
+    color: rgb(59, 147, 199);
+    font-weight: $heavyWeight;
+}
+
+ figure img {
+    width: 100%;
+}
+
+ figure {
+    width: 100%;
+    margin: 0;
+}
+
+ figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+}//end of main
+
+div.news p {
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+
+/* footer rules */
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color: rgb(59, 147, 199);
+}

@@ -1,4 +1,4 @@
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -274,13 +274,13 @@
    * 2. Correct the inability to style clickable types in iOS and Safari.
    */
   
-  button,
+ /* button,
   html [type="button"], /* 1 */
-  [type="reset"],
+  /*[type="reset"],
   [type="submit"] {
     /*-webkit-appearance: button; /* 2 */
-  }
-  
+ /* }
+
   /**
    * Remove the inner border and padding in Firefox.
    */

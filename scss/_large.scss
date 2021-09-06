@@ -1,24 +1,32 @@
-@media only screen and (min-width: 1028px) {
-    nav ul {
-        padding-left: 2%;
-    }
-    nav ul li {
+    nav {
+        width: 100%;
+    
+     ul li {
         flex-basis: auto;
-    }
+        }
    
-    nav a {
+        
+     a {
         padding: .6rem 1rem;
+        }
     }
-   
-    header, footer, nav, main {
+
+
+    body {
         max-width: 75rem;
         margin: auto;
     }
+
+
+
     main figure {
         width: 40%;
     }
+
+
+
    
     div.news {
         column-count: 3;
     }
-   } /*end of media query*/
+  
