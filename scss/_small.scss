@@ -19,8 +19,12 @@ body {
 
 /* header rules */
 
-header {
+div#headerWrapper {
     background-color: rgb(59, 147, 199);
+}
+
+header {
+  
     padding: 1rem 2%;
     display: flex;
     align-items: center;
@@ -46,8 +50,11 @@ header {
 
 
 /* navigation rules */
-nav {
+#navWrapper {
     background-color: black;
+}
+nav {
+  
 
  ul {
     margin: 0;
@@ -113,8 +120,11 @@ div.news p {
 
 /* footer rules */
 
+div#footerWrapper {
+    background-color: rgb(59, 147, 199);
+}
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: rgb(59, 147, 199);
+ 
 }
