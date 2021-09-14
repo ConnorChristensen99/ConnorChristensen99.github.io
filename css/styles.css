@@ -398,7 +398,7 @@ body {
 
 /* header rules */
 div#headerWrapper {
-  background-color: #3b93c7; }
+  /* background-color: $primaryColor; */ }
 
 header {
   padding: 1rem 2%;
@@ -417,30 +417,33 @@ header {
 
 /* navigation rules */
 #navWrapper {
-  background-color: black; }
+  background-color: #3b93c7; }
 
 nav ul {
-  margin: 0;
+  margin-bottom: 10px;
   padding: 0; }
 nav li {
   list-style-type: none; }
-nav li.active {
-  background-color: #b6b2b2; }
+nav li.active a {
+  background-color: #235979; }
 nav a {
   display: block;
   padding: .8rem 0;
   color: #eee;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  background-color: #63a9d2;
+  border-bottom: 2px solid #3b93c7; }
 nav a:hover {
-  background-color: grey; }
+  background-color: #2e76a1; }
 
 /* main rules */
 div.maininfo {
   padding: 1rem 2%; }
 
 main {
-  display: block; }
+  display: block;
+  margin-left: 5px; }
   main h1 {
     color: #3b93c7;
     font-weight: 600; }
@@ -452,6 +455,15 @@ main {
   main figcaption {
     text-align: center;
     font-size: .8rem; }
+  main div#frisbeeGallery figcaption {
+    size: 3rem;
+    padding-bottom: 1.5rem; }
+  main div#frisbeeGallery {
+    display: flex;
+    flex-wrap: wrap; }
+    main div#frisbeeGallery figcaption {
+      text-align: center;
+      font-size: 1rem; }
 
 div.news p {
   margin-top: 0;
@@ -467,11 +479,16 @@ footer {
 
 @media only screen and (min-width: 560px) {
   nav ul {
-    display: flex; }
+    display: flex;
+    justify-content: space-evenly; }
     nav ul ul li {
-      flex-basis: 25%; }
+      flex-basis: auto; }
     nav ul a {
-      padding: .6rem 1rem; }
+      width: 150%;
+      border-top: 2px solid #3b93c7;
+      border-right: 2px solid #173c52;
+      border-bottom: 2px solid #3b93c7;
+      border-left: 2px solid #daeaf4; }
 
   div.heroimage {
     width: 100%;
@@ -479,6 +496,9 @@ footer {
     div.heroimage figure {
       width: 100%;
       height: auto; }
+
+  div#frisbeeGallery figure {
+    flex-basis: 46%; }
 
   div#headerInfo {
     flex-wrap: wrap; }
@@ -496,19 +516,17 @@ footer {
     padding-top: 3rem; } }
 /*end of media query*/
 @media only screen and (min-width: 1028px) {
-  nav {
-    width: 100%; }
-    nav ul li {
-      flex-basis: auto; }
-    nav a {
-      padding: .6rem 1rem; }
+  nav ul li {
+    flex-basis: auto; }
+  nav a {
+    padding: .6rem 1rem; }
 
   header, nav, main, footer {
     max-width: 1200px;
     margin: auto; }
 
-  main figure {
-    width: 40%; }
+  div#frisbeeGallery figure {
+    flex-basis: 23%; }
 
   div.news {
     column-count: 3; } }

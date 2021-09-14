@@ -1,5 +1,4 @@
     nav {
-        width: 100%;
     
      ul li {
         flex-basis: auto;
@@ -18,12 +17,9 @@
     }
 
 
-
-    main figure {
-        width: 40%;
+    div#frisbeeGallery figure {
+        flex-basis: 23%;
     }
-
-
 
    
     div.news {

@@ -20,7 +20,7 @@ body {
 /* header rules */
 
 div#headerWrapper {
-    background-color: rgb(59, 147, 199);
+   /* background-color: $primaryColor; */
 }
 
 header {
@@ -51,13 +51,13 @@ header {
 
 /* navigation rules */
 #navWrapper {
-    background-color: black;
+     background-color: $primaryColor; 
 }
 nav {
   
 
  ul {
-    margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     }
 
@@ -65,8 +65,8 @@ nav {
     list-style-type: none;
     }
 
- li.active {
-    background-color: rgb(182, 178, 178);
+ li.active a {
+    background-color: darken($primaryColor, 20%);
     }
 
  a {
@@ -75,9 +75,13 @@ nav {
     color: #eee;
     text-align: center;
     text-decoration: none;
+    background-color: lighten($primaryColor, 10%);
+    border-bottom: 2px solid $primaryColor;
     }
 
- a:hover {background-color: grey;}
+ a:hover {
+     background-color: darken($primaryColor, 10%);
+}
 
 }//end of nav
 
@@ -90,9 +94,10 @@ div.maininfo {
 main {
     
     display: block;
+    margin-left: 5px;
 
  h1 {
-    color: rgb(59, 147, 199);
+    color: $primaryColor;
     font-weight: $heavyWeight;
 }
 
@@ -110,6 +115,22 @@ main {
     font-size: .8rem;
 }
 
+div#frisbeeGallery figcaption{
+    size: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+div#frisbeeGallery {
+    display: flex;
+    flex-wrap: wrap;
+    figcaption {
+        text-align: center;
+        font-size: 1rem;
+    }
+}   
+
 }//end of main
 
 div.news p {
@@ -121,7 +142,7 @@ div.news p {
 /* footer rules */
 
 div#footerWrapper {
-    background-color: rgb(59, 147, 199);
+    background-color: $primaryColor;
 }
 footer {
     text-align: center;

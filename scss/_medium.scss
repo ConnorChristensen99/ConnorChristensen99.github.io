@@ -1,14 +1,23 @@
 
-   nav ul {
+  
+  nav ul {
         display: flex;
+        justify-content: space-evenly;
+        
+     
         
         ul li {
-        flex-basis: 25%;
+        flex-basis: auto;
+   
        
     }
 
     a {
-        padding: .6rem 1rem;
+        width: 150%;
+        border-top:2px solid $primaryColor;
+        border-right:2px solid darken($primaryColor, 30%);
+        border-bottom:2px solid $primaryColor;
+        border-left:2px solid lighten($primaryColor, 40%);
         }
 
 }
@@ -20,6 +29,10 @@ div.heroimage {
         width: 100%;
         height: auto;
     }
+}
+
+div#frisbeeGallery figure {
+    flex-basis: 46%;
 }
 
 div#headerInfo {
