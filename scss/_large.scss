@@ -1,4 +1,9 @@
-    nav {
+div#headerWrapper {
+    background-image: url(../Images/Frisbee_Header_Image-assets/header_large-min.jpg);
+    height: 250px;
+    background-size: cover;
+}
+   nav {
     
      ul li {
         flex-basis: auto;

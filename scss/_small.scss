@@ -20,14 +20,15 @@ body {
 /* header rules */
 
 div#headerWrapper {
-   /* background-color: $primaryColor; */
+    background-image: url(../Images/Frisbee_Header_Image-assets/header_small-min.jpg);
+    height: 175px;
 }
 
 header {
-  
     padding: 1rem 2%;
     display: flex;
     align-items: center;
+    color: white;
 
     figure {
         margin: 0;
@@ -51,12 +52,13 @@ header {
 
 /* navigation rules */
 #navWrapper {
-     background-color: $primaryColor; 
+    background-color: darken($primaryColor, 10%);
 }
 nav {
   
 
  ul {
+    margin-top: 0px;
     margin-bottom: 10px;
     padding: 0;
     }
@@ -87,7 +89,33 @@ nav {
 
 
 /* main rules */
+div.wrapperCard {
+    display: flex;
 
+}
+div.card {
+    border: 1px solid black;
+    flex-basis: 33%;
+        img {
+            height: auto;
+            width: 30%;
+        }
+}
+div.card:hover img {
+    animation: move 3s 1;
+    }
+    img {
+        position: relative;
+    }
+
+    @keyframes move {
+        0% {left: 0px; transform: rotate(0deg); animation-timing-function: ease-out;}
+        25% {right: 75px;  transform: rotate(100deg); animation-timing-function: ease-in;}
+        50% {right: 200px;  transform: rotate(150deg); animation-timing-function: ease-out;}
+        75% {left: 75px;  transform: rotate(200deg); animation-timing-function: ease-in;}
+        100% {left: 0px; transform: rotate(-30deg); animation-timing-function: ease-out }
+    }
+    
 div.maininfo {
     padding: 1rem 2%;
 }

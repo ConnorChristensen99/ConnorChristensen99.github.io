@@ -398,12 +398,14 @@ body {
 
 /* header rules */
 div#headerWrapper {
-  /* background-color: $primaryColor; */ }
+  background-image: url(../Images/Frisbee_Header_Image-assets/header_small-min.jpg);
+  height: 175px; }
 
 header {
   padding: 1rem 2%;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  color: white; }
   header figure {
     margin: 0;
     padding-right: 20px; }
@@ -417,9 +419,10 @@ header {
 
 /* navigation rules */
 #navWrapper {
-  background-color: #3b93c7; }
+  background-color: #2e76a1; }
 
 nav ul {
+  margin-top: 0px;
   margin-bottom: 10px;
   padding: 0; }
 nav li {
@@ -438,6 +441,43 @@ nav a:hover {
   background-color: #2e76a1; }
 
 /* main rules */
+div.wrapperCard {
+  display: flex; }
+
+div.card {
+  border: 1px solid black;
+  flex-basis: 33%; }
+  div.card img {
+    height: auto;
+    width: 30%; }
+
+div.card:hover img {
+  animation: move 3s 1; }
+
+img {
+  position: relative; }
+
+@keyframes move {
+  0% {
+    left: 0px;
+    transform: rotate(0deg);
+    animation-timing-function: ease-out; }
+  25% {
+    right: 75px;
+    transform: rotate(100deg);
+    animation-timing-function: ease-in; }
+  50% {
+    right: 200px;
+    transform: rotate(150deg);
+    animation-timing-function: ease-out; }
+  75% {
+    left: 75px;
+    transform: rotate(200deg);
+    animation-timing-function: ease-in; }
+  100% {
+    left: 0px;
+    transform: rotate(-30deg);
+    animation-timing-function: ease-out; } }
 div.maininfo {
   padding: 1rem 2%; }
 
@@ -456,6 +496,7 @@ main {
     text-align: center;
     font-size: .8rem; }
   main div#frisbeeGallery figcaption {
+    size: 3rem;
     padding-bottom: 1.5rem; }
   main div#frisbeeGallery {
     display: flex;
@@ -477,17 +518,17 @@ footer {
   padding: 1rem 2%; }
 
 @media only screen and (min-width: 560px) {
+  div#headerWrapper {
+    background-image: url(../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
+    height: 250px; }
+
   nav ul {
     display: flex;
     justify-content: space-evenly; }
     nav ul ul li {
       flex-basis: auto; }
     nav ul a {
-      width: 150%;
-      border-top: 2px solid #3b93c7;
-      border-right: 2px solid #173c52;
-      border-bottom: 2px solid #3b93c7;
-      border-left: 2px solid #daeaf4; }
+      width: 150%; }
 
   div.heroimage {
     width: 100%;
@@ -514,7 +555,12 @@ footer {
     column-rule: 1px black solid;
     padding-top: 3rem; } }
 /*end of media query*/
-@media only screen and (min-width: 1028px) {
+@media only screen and (min-width: 960px) {
+  div#headerWrapper {
+    background-image: url(../Images/Frisbee_Header_Image-assets/header_large-min.jpg);
+    height: 250px;
+    background-size: cover; }
+
   nav ul li {
     flex-basis: auto; }
   nav a {
