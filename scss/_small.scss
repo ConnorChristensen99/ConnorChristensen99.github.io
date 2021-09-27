@@ -91,15 +91,50 @@ nav {
 /* main rules */
 div.wrapperCard {
     display: flex;
+    flex-wrap: wrap;
 
 }
 div.card {
-    border: 1px solid black;
-    flex-basis: 33%;
+    border: 1px solid #999;
+    flex-basis: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: $cardRadius;
         img {
             height: auto;
             width: 30%;
         }
+
+        section {
+            background-color: $primaryColor;
+            color: #eee;
+            margin-bottom: 1rem;
+            padding: 1rem 0;
+            font-size: 24px;
+            border-top-left-radius: $cardRadius - 1;
+            border-top-right-radius: $cardRadius - 1;
+        }
+
+        p {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        a {
+            display: block;
+            background-color: $primaryColor;
+            padding: $cardRadius;
+            margin: 1rem 4vw;
+            border-radius: $cardRadius;
+        }
+
+        a:hover {
+            background-color: lighten($primaryColor, 10%);
+        }
+
+
 }
 div.card:hover img {
     animation: move 3s 1;
@@ -113,7 +148,7 @@ div.card:hover img {
         25% {right: 75px;  transform: rotate(100deg); animation-timing-function: ease-in;}
         50% {right: 200px;  transform: rotate(150deg); animation-timing-function: ease-out;}
         75% {left: 75px;  transform: rotate(200deg); animation-timing-function: ease-in;}
-        100% {left: 0px; transform: rotate(-30deg); animation-timing-function: ease-out }
+        100% {left: 0px; transform: rotate(-30deg); animation-timing-function: ease-out; }
     }
     
 div.maininfo {

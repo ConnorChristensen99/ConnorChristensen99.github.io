@@ -30,4 +30,10 @@ div#headerWrapper {
     div.news {
         column-count: 3;
     }
+
+    main {
+        div.card {
+            flex-basis: 29%;
+        }
+    }
   

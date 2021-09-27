@@ -442,14 +442,39 @@ nav a:hover {
 
 /* main rules */
 div.wrapperCard {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 div.card {
-  border: 1px solid black;
-  flex-basis: 33%; }
+  border: 1px solid #999;
+  flex-basis: 100%;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 10px; }
   div.card img {
     height: auto;
     width: 30%; }
+  div.card section {
+    background-color: #3b93c7;
+    color: #eee;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    font-size: 24px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px; }
+  div.card p {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  div.card a {
+    display: block;
+    background-color: #3b93c7;
+    padding: 10px;
+    margin: 1rem 4vw;
+    border-radius: 10px; }
+  div.card a:hover {
+    background-color: #63a9d2; }
 
 div.card:hover img {
   animation: move 3s 1; }
@@ -553,7 +578,10 @@ footer {
     clear: both;
     column-count: 2;
     column-rule: 1px black solid;
-    padding-top: 3rem; } }
+    padding-top: 3rem; }
+
+  main div.card {
+    flex-basis: 46%; } }
 /*end of media query*/
 @media only screen and (min-width: 960px) {
   div#headerWrapper {
@@ -574,5 +602,8 @@ footer {
     flex-basis: 23%; }
 
   div.news {
-    column-count: 3; } }
+    column-count: 3; }
+
+  main div.card {
+    flex-basis: 29%; } }
 /*end of media query*/
