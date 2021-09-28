@@ -521,7 +521,6 @@ main {
     text-align: center;
     font-size: .8rem; }
   main div#frisbeeGallery figcaption {
-    size: 3rem;
     padding-bottom: 1.5rem; }
   main div#frisbeeGallery {
     display: flex;
