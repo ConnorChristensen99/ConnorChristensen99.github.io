@@ -512,9 +512,9 @@ main {
   main h1 {
     color: #3b93c7;
     font-weight: 600; }
-  main figure img {
+  main picture img {
     width: 100%; }
-  main figure {
+  main picture {
     width: 100%;
     margin: 0; }
   main figcaption {
@@ -567,7 +567,7 @@ footer {
   div#headerInfo {
     flex-wrap: wrap; }
 
-  main figure {
+  main picture {
     float: right;
     width: 48%;
     margin-left: 2%;
