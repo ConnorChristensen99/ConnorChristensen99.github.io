@@ -517,7 +517,7 @@ main {
   main picture {
     width: 100%;
     margin: 0; }
-  main figcaption {
+  main div#pictureTag {
     text-align: center;
     font-size: .8rem; }
   main div#frisbeeGallery figcaption {
