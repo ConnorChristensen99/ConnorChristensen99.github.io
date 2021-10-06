@@ -25,7 +25,7 @@ div#headerWrapper {
 }
 
 header {
-    padding: 1rem 2%;
+    padding: 4rem 2%;
     display: flex;
     align-items: center;
     color: white;
@@ -210,4 +210,11 @@ footer {
     text-align: center;
     padding: 1rem 2%;
  
+}
+
+div#heroImage {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
 }

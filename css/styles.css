@@ -402,7 +402,7 @@ div#headerWrapper {
   height: 175px; }
 
 header {
-  padding: 1rem 2%;
+  padding: 4rem 2%;
   display: flex;
   align-items: center;
   color: white; }
@@ -541,6 +541,12 @@ footer {
   text-align: center;
   padding: 1rem 2%; }
 
+div#heroImage {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%; }
+
 @media only screen and (min-width: 560px) {
   div#headerWrapper {
     background-image: url(../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
@@ -553,13 +559,6 @@ footer {
       flex-basis: auto; }
     nav ul a {
       width: 150%; }
-
-  div.heroimage {
-    width: 100%;
-    height: auto; }
-    div.heroimage figure {
-      width: 100%;
-      height: auto; }
 
   div#frisbeeGallery figure {
     flex-basis: 46%; }
