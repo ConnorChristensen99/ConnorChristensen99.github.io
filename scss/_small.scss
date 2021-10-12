@@ -59,7 +59,7 @@ nav {
 
  ul {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 0;
     }
 
@@ -213,8 +213,10 @@ footer {
 }
 
 div#heroImage {
+    display: flex;
     margin: 0;
     padding: 0;
     height: auto;
     width: 100%;
+    justify-content: center;
 }
