@@ -515,7 +515,7 @@ main {
   main picture img {
     width: 100%; }
   main picture {
-    width: 100%;
+    width: 50%;
     margin: 0; }
   main div#pictureTag {
     text-align: center;
