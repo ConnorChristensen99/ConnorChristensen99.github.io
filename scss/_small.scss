@@ -165,11 +165,14 @@ main {
 }
 
  picture img {
-    width: 100%;
+    width: 50%;
+    float: right;
+    padding-left: 2rem;
+    padding-bottom: 2%;
 }
 
  picture {
-    width: 50%;
+    width: 100%;
     margin: 0;
 }
 
