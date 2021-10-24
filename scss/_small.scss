@@ -223,3 +223,38 @@ div#heroImage {
     width: 100%;
     justify-content: center;
 }
+
+div#mainathletecards {
+    display: flex;
+    img {
+        max-width: 50%;
+    }
+
+    div#round img {
+        float: left;
+        shape-outside: circle(100% at 100% 0%);
+        clip-path: circle(100% at 100% 0%);
+        margin: .5rem;
+    }
+
+    div#triangle img {
+        float: left;
+        shape-outside: polygon(0 0, 100% 0, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+        margin: .5rem;
+    }
+
+    div#cross img {
+        float: right;
+        shape-outside: polygon(0 0, 100% 0, 50% 100%);
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        margin: .5rem;
+    }
+
+    div#arc img {
+        float: right;
+        shape-outside: circle(100% at 100% 0%);
+        clip-path: circle(100% at 100% 0%);
+        margin: .5rem;
+    }
+}

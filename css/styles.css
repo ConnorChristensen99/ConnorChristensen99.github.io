@@ -552,6 +552,31 @@ div#heroImage {
   width: 100%;
   justify-content: center; }
 
+div#mainathletecards {
+  display: flex; }
+  div#mainathletecards img {
+    max-width: 50%; }
+  div#mainathletecards div#round img {
+    float: left;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: circle(100% at 100% 0%);
+    margin: .5rem; }
+  div#mainathletecards div#triangle img {
+    float: left;
+    shape-outside: polygon(0 0, 100% 0, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    margin: .5rem; }
+  div#mainathletecards div#cross img {
+    float: right;
+    shape-outside: polygon(0 0, 100% 0, 50% 100%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    margin: .5rem; }
+  div#mainathletecards div#arc img {
+    float: right;
+    shape-outside: circle(100% at 100% 0%);
+    clip-path: circle(100% at 100% 0%);
+    margin: .5rem; }
+
 @media only screen and (min-width: 560px) {
   div#headerWrapper {
     background-image: url(../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
