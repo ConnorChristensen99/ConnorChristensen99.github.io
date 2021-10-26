@@ -194,7 +194,20 @@ div#frisbeeGallery {
         text-align: center;
         font-size: 1rem;
     }
-}   
+}
+
+div#galleryMain figure {
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    position: relative;
+    margin:0;
+}
+div#galleryMain figure image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
 
 }//end of main
 
@@ -226,35 +239,74 @@ div#heroImage {
 
 div#mainathletecards {
     display: flex;
+    padding-bottom: 5%;
+    
     img {
-        max-width: 50%;
+        max-width: 70%;
     }
 
-    div#round img {
-        float: left;
-        shape-outside: circle(100% at 100% 0%);
-        clip-path: circle(100% at 100% 0%);
-        margin: .5rem;
-    }
+    div#round {
+        padding-right: 2%;
+        padding-left: 2%;
+        border-right:solid rgba(48, 61, 71, 0.911);
+        margin-top: 2%;
+        margin-bottom: 2%;
 
-    div#triangle img {
-        float: left;
-        shape-outside: polygon(0 0, 100% 0, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 0 100%);
-        margin: .5rem;
-    }
-
-    div#cross img {
+        img {
         float: right;
-        shape-outside: polygon(0 0, 100% 0, 50% 100%);
-        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        shape-outside: circle(45% at 100px);
+        clip-path: circle(45% at 100px);
         margin: .5rem;
+        }
     }
 
-    div#arc img {
+    div#triangle {
+        padding-right: 2%;
+        padding-left: 2%;
+        border-right:solid rgba(70, 78, 85, 0.911);
+        margin-top: 2%;
+        margin-bottom: 2%;
+        img {
         float: right;
-        shape-outside: circle(100% at 100% 0%);
-        clip-path: circle(100% at 100% 0%);
+        shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 40% 50%, 0% 0%);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 40% 50%, 0% 0%);
+        margin: .5rem;
+        }
+    }
+    div#cross {
+        padding-left: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        img {
+        float: right;
+        shape-outside: polygon(0 0, 80% 0%, 70% 100%);
+        clip-path: polygon(0 0, 80% 0%, 70% 100%);
+        margin: .5rem;
+        }
+    }
+    div#arc {
+        padding-right: 2%;
+        padding-left: 2%;
+        border-right:solid rgba(48, 61, 71, 0.911);
+        margin-top: 2%;
+        margin-bottom: 2%;
+        img {
+        float: right;
+        shape-outside: circle(85% at 100% 0%);
+        clip-path: circle(85% at 100% 0%);
         margin: .5rem;
     }
+}
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+div#topathletemain {
+    background-color: rgba(137, 166, 190, 0.712);
 }
