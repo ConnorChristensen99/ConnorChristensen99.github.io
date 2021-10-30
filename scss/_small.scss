@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 560px) {
     .h2hidden {
       display: none;
@@ -9,15 +10,22 @@
   }
 
 
-/* body rules */
+
+
+
+///CSS BODY
 body {
     font-family: $fontFamily;
     font-size: 16px;
     font-weight: $regularWeight;
 }
+///END BODY
 
 
-/* header rules */
+
+
+
+///CSS HEADER
 
 div#headerWrapper {
     background-image: url(../Images/Frisbee_Header_Image-assets/header_small-min.jpg);
@@ -46,11 +54,14 @@ header {
         font-weight: $regularWeight;
     }//end of h2
 
-} //end of header
+} 
+///END HEADER
 
 
 
-/* navigation rules */
+
+
+///CSS NAVIGATION
 #navWrapper {
     background-color: darken($primaryColor, 10%);
 }
@@ -85,10 +96,14 @@ nav {
      background-color: darken($primaryColor, 10%);
 }
 
-}//end of nav
+}
+///END NAVIGATION
 
 
-/* main rules */
+
+
+
+///CSS MAIN
 div.wrapperCard {
     display: flex;
     flex-wrap: wrap;
@@ -150,7 +165,9 @@ div.card:hover img {
         75% {left: 75px;  transform: rotate(200deg); animation-timing-function: ease-in;}
         100% {left: 0px; transform: rotate(-30deg); animation-timing-function: ease-out; }
     }
-    
+/*End of Shop Main */
+
+
 div.maininfo {
     padding: 1rem 2%;
 }
@@ -180,52 +197,6 @@ div#pictureTag {
     text-align: center;
     font-size: .8rem;
 }
-
-div#frisbeeGallery figcaption{
-    padding-bottom: 1.5rem;
-}
-
-
-
-div#frisbeeGallery {
-    display: flex;
-    flex-wrap: wrap;
-    figcaption {
-        text-align: center;
-        font-size: 1rem;
-    }
-}
-
-div#galleryMain figure {
-    width: 100%;
-    height: 0;
-    padding-bottom: 60%;
-    position: relative;
-    margin:0;
-}
-div#galleryMain figure image {
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-
-}//end of main
-
-div.news p {
-    margin-top: 0;
-    padding-bottom: 5px;
-}
-
-
-/* footer rules */
-
-div#footerWrapper {
-    background-color: $primaryColor;
-}
-footer {
-    text-align: center;
-    padding: 1rem 2%;
- 
 }
 
 div#heroImage {
@@ -236,6 +207,22 @@ div#heroImage {
     width: 100%;
     justify-content: center;
 }
+
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+div.news p {
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+/*End of index main*/
+
 
 div#mainathletecards {
     display: flex;
@@ -298,15 +285,26 @@ div#mainathletecards {
     }
 }
 }
-
-h3 {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    font-size: 1.5rem;
-    padding-top: 2%;
-}
-
 div#topathletemain {
     background-color: rgba(137, 166, 190, 0.712);
 }
+
+/*End of Top AThlete Main */
+///END MAIN
+
+
+
+
+///CSS FOOTER
+
+div#footerWrapper {
+    background-color: $primaryColor;
+}
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+ 
+}
+
+///END FOOTER
+

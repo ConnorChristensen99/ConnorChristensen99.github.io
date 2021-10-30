@@ -1,8 +1,14 @@
-div#headerWrapper {
-    background-image: url(../Images/Frisbee_Header_Image-assets/header_large-min.jpg);
-    height: 250px;
-    background-size: cover;
+
+
+///CSS RESETING
+header, nav, main, footer {
+    max-width: 1200px;
+    margin: auto;
 }
+
+
+
+///NAV AND HEADER CSS
    nav {
     
      ul li {
@@ -15,21 +21,19 @@ div#headerWrapper {
         }
     }
 
-
-    header, nav, main, footer {
-        max-width: 1200px;
-        margin: auto;
+    div#headerWrapper {
+        background-image: url(../Images/Frisbee_Header_Image-assets/header_large-min.jpg);
+        height: 250px;
+        background-size: cover;
     }
 
 
-    div#frisbeeGallery figure {
-        flex-basis: 23%;
-    }
 
-   
+///MAIN CSS 
     div.news {
         column-count: 3;
     }
+
 
     main {
         div.card {

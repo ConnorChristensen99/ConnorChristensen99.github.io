@@ -1,53 +1,56 @@
 
+  
+  
+  ///NAV AND HEADER CSS
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+ 
+    
+    ul li {
+    flex-basis: auto;
+
+   
+}
+
+a {
+    width: 150%;
+    }
+
+}
+
   div#headerWrapper {
     background-image: url(../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
     height: 250px;
-}
-  
-  
-  nav ul {
-        display: flex;
-        justify-content: space-evenly;
-        
-     
-        
-        ul li {
-        flex-basis: auto;
-   
-       
-    }
-
-    a {
-        width: 150%;
-        }
-
-}
-
-div#frisbeeGallery figure {
-    flex-basis: 46%;
 }
 
 div#headerInfo {
     flex-wrap: wrap;
 }
 
-    div.news {
-        clear: both;
-        column-count: 2;
-        column-rule: 1px black solid;
-        padding-top: 3rem;
-    }
+  
 
-    main {
-        div.card {
-            flex-basis: 46%;
-        }
-    }
 
-    main img {
+///MAIN CSS
+
+main {
+
+    img {
         padding-left: 2rem;
         padding-bottom: 2%;
+       }
+
+    div.card {
+        flex-basis: 46%;
     }
+}
 
 
 
+div.news {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px black solid;
+    padding-top: 3rem;
+    }
