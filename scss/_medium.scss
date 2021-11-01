@@ -36,6 +36,11 @@ div#headerInfo {
 
 main {
 
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {flex-basis: $w;}
+    }
+
     img {
         padding-left: 2rem;
         padding-bottom: 2%;
@@ -44,6 +49,8 @@ main {
     div.card {
         flex-basis: 46%;
     }
+
+    
 }
 
 

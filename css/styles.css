@@ -592,7 +592,106 @@ div#mainathletecards {
 div#topathletemain {
   background-color: rgba(137, 166, 190, 0.712); }
 
-/*End of Top AThlete Main */
+/*End of Top Athlete Main */
+div.flexed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  div.flexed h3 {
+    padding-top: 5%; }
+
+.column {
+  padding: 0 1vw; }
+
+.small-1 {
+  flex-basis: 8.3333333333%; }
+
+.small-2 {
+  flex-basis: 16.6666666667%; }
+
+.small-3 {
+  flex-basis: 25%; }
+
+.small-4 {
+  flex-basis: 33.3333333333%; }
+
+.small-5 {
+  flex-basis: 41.6666666667%; }
+
+.small-6 {
+  flex-basis: 50%; }
+
+.small-7 {
+  flex-basis: 58.3333333333%; }
+
+.small-8 {
+  flex-basis: 66.6666666667%; }
+
+.small-9 {
+  flex-basis: 75%; }
+
+.small-10 {
+  flex-basis: 83.3333333333%; }
+
+.small-11 {
+  flex-basis: 91.6666666667%; }
+
+.small-12 {
+  flex-basis: 100%; }
+
+.cards {
+  border: 2px solid black;
+  margin: 1%; }
+
+.button {
+  margin-bottom: 1rem;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #3b93c7;
+  border-radius: 10px; }
+  .button a:hover {
+    color: white; }
+
+.review {
+  background-color: #2e3338;
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  font-size: 1.5rem;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  .review a {
+    color: white;
+    text-decoration: none; }
+
+.blogs {
+  border: 2px solid black;
+  margin: 1%;
+  margin-bottom: 5%; }
+
+.lmbutton {
+  background-color: #3b93c7;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.faq {
+  border: 2px solid black;
+  margin: 1%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column; }
+
+/* End of Columns Main*/
 div#footerWrapper {
   background-color: #3b93c7; }
 
@@ -616,6 +715,30 @@ footer {
   div#headerInfo {
     flex-wrap: wrap; }
 
+  main .medium-1 {
+    flex-basis: 8.3333333333%; }
+  main .medium-2 {
+    flex-basis: 16.6666666667%; }
+  main .medium-3 {
+    flex-basis: 25%; }
+  main .medium-4 {
+    flex-basis: 33.3333333333%; }
+  main .medium-5 {
+    flex-basis: 41.6666666667%; }
+  main .medium-6 {
+    flex-basis: 50%; }
+  main .medium-7 {
+    flex-basis: 58.3333333333%; }
+  main .medium-8 {
+    flex-basis: 66.6666666667%; }
+  main .medium-9 {
+    flex-basis: 75%; }
+  main .medium-10 {
+    flex-basis: 83.3333333333%; }
+  main .medium-11 {
+    flex-basis: 91.6666666667%; }
+  main .medium-12 {
+    flex-basis: 100%; }
   main img {
     padding-left: 2rem;
     padding-bottom: 2%; }
@@ -646,6 +769,30 @@ footer {
   div.news {
     column-count: 3; }
 
+  main .large-1 {
+    flex-basis: 8.3333333333%; }
+  main .large-2 {
+    flex-basis: 16.6666666667%; }
+  main .large-3 {
+    flex-basis: 25%; }
+  main .large-4 {
+    flex-basis: 33.3333333333%; }
+  main .large-5 {
+    flex-basis: 41.6666666667%; }
+  main .large-6 {
+    flex-basis: 50%; }
+  main .large-7 {
+    flex-basis: 58.3333333333%; }
+  main .large-8 {
+    flex-basis: 66.6666666667%; }
+  main .large-9 {
+    flex-basis: 75%; }
+  main .large-10 {
+    flex-basis: 83.3333333333%; }
+  main .large-11 {
+    flex-basis: 91.6666666667%; }
+  main .large-12 {
+    flex-basis: 100%; }
   main div.card {
     flex-basis: 29%; } }
 /*end of media query*/

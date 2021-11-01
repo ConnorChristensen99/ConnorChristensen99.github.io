@@ -36,6 +36,12 @@ header, nav, main, footer {
 
 
     main {
+
+        @for $i from 1 through 12 {
+            $w: ($i / 12) * 100%;
+            .large-#{$i} {flex-basis: $w;}
+        }
+
         div.card {
             flex-basis: 29%;
         }
