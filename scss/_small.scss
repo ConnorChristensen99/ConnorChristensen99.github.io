@@ -313,6 +313,10 @@ div.flexed {
 .cards {
     border: 2px solid black;
     margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .button {
@@ -347,6 +351,12 @@ div.flexed {
     border: 2px solid black;
     margin: 1%;
     margin-bottom: 5%;
+
+    img {
+        max-width: 200px;
+        height: auto;
+        padding-top: 5%;
+    }
 }
 
 .lmbutton {
