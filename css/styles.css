@@ -699,6 +699,20 @@ div.flexed {
   flex-direction: column; }
 
 /* End of Columns Main*/
+.social {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center; }
+  .social a {
+    flex-basis: 10%;
+    text-align: center;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white; }
+  .social a:hover {
+    color: #235979; }
+
+/* End social Icons*/
 div#footerWrapper {
   background-color: #3b93c7; }
 

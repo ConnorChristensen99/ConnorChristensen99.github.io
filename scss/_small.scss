@@ -253,12 +253,12 @@ div#mainathletecards {
         border-right:solid rgba(70, 78, 85, 0.911);
         margin-top: 2%;
         margin-bottom: 2%;
-        img {
-        float: right;
-        shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 40% 50%, 0% 0%);
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 40% 50%, 0% 0%);
-        margin: .5rem;
-        }
+            img {
+                float: right;
+                shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 40% 50%, 0% 0%);
+                clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 40% 50%, 0% 0%);
+                margin: .5rem;
+             }
     }
     div#cross {
         padding-left: 2%;
@@ -383,6 +383,24 @@ div.flexed {
 }
 
 /* End of Columns Main*/
+
+.social {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+
+    a {
+        flex-basis: 10%;
+        text-align: center;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {color: darken($color: $primaryColor, $amount: 20%);}
+}
+
+/* End social Icons*/
 
 ///END MAIN
 
