@@ -303,6 +303,11 @@ div.flexed {
     }
 }
 
+div#topAthletes {
+    display: flex;
+    justify-content: center;
+}
+
 .column {padding: 0 $gutter}
 
 @for $i from 1 through 12 {
@@ -316,12 +321,11 @@ div.flexed {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .button {
-    margin-bottom: 1rem;
-    padding: .5rem;
+    margin-bottom: .5rem;
+    padding: 0 .5rem;
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
@@ -345,6 +349,13 @@ div.flexed {
         color: white;
         text-decoration: none;
     }
+}
+
+#fixing {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    width: 100%;
 }
 
 .blogs {
