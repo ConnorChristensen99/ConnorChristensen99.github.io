@@ -599,6 +599,8 @@ div.flexed {
   justify-content: center; }
   div.flexed h3 {
     padding-top: 5%; }
+  div.flexed img {
+    width: 100%; }
 
 div#topAthletes {
   display: flex;
