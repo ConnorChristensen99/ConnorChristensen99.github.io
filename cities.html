@@ -49,8 +49,8 @@
   <li><a href="gallery.html">Leaderboards</a></li>
   <li><a href="shop.html">Shop</a></li>
   <li><a href="topathletes.html">Top Athletes</a></li>
-  <li class="active"><a href="news.html">News</a></li>
-  <li><a href="cities.html">Cities</a></li>
+  <li><a href="news.html">News</a></li>
+  <li class="active"><a href="cities.html">Cities</a></li>
 </ul>
 </nav>
 </div>
@@ -58,38 +58,19 @@
 
 
 <main>
-    <div class="storyGrid">
 
-        <div class="lead">
-            <img src="Images/NewsPageFrisbees/1.jpg" alt="">
-            <span>"Best Overall: Discraft Ultra-Star Sport Disc"</span>
-        </div>
-        <div class="teaser">
-            <img src="Images/NewsPageFrisbees/2.jpg" alt="">
-            <span>"Best Light-Up: Nite Ize Flashflight LED Flying Disc"</span>
-        </div>
-        <div class="teaser">
-            <img src="Images/NewsPageFrisbees/3.jpg" alt="">
-            <span>"Best for Long Distance Throws: Aerobie Pro Ring"</span>
-        </div>
-        <div class="teaser">
-            <img src="Images/NewsPageFrisbees/4.jpg" alt="">
-            <span>"Best for the Beach: INNOVA Big Kahuna Heavyweight Ultimate Throw and Catch Disc"</span>
-        </div>
-        <div class="teaser">
-            <img src="Images/NewsPageFrisbees/5.jpg" alt="">
-            <span>"Best Set: Innova Disc Golf Set 3-Pack"</span>
-        </div>
-        <div class="teaser">
-            <img src="Images/NewsPageFrisbees/6.jpg" alt="">
-            <span>"Best Portable: Waboba Wingman Flying Disc"</span>
-        </div>
-        <div class="teaser">
-            <img src="Images/NewsPageFrisbees/7.jpg" alt="">
-            <span>"Best for Ultimate Frisbee: Innova Pulsar Ultimate Disc"</span>
-        </div>
-
+<div class="mySlider">
+    <div>
+        <img src="Images/Harry_Potter_character_poster.jpg" alt="Slider">
+        <div id="textSlider"><b>Harry Potter</b> - The Boy Who Lived</div>
     </div>
+
+    <div>
+        <img src="Images/Harry_Potter_character_poster.jpg" alt="Slider">
+        <div id="textSlider"><b>Harry Potter</b> - The Boy Who Lived</div>
+    </div>
+
+</div>
 
 </main>
 
@@ -147,6 +128,24 @@
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    $('.mySlider').slick({
+        dots: ture,
+        arrows: false,
+        infinite: true,
+        speed: 1000,
+        cssEase: 'ease-out',
+        autoplay: true,
+        autoplaySpeed: 15000
+    });
+});
+
+</script>
+
 </body>
 </html>
-
