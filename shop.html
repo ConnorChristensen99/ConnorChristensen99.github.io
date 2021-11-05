@@ -11,6 +11,7 @@
 
 <link href="css/styles.css" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ee9f93e4cc.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts.js"></script>
 
 </head>
 
@@ -38,12 +39,15 @@
 
   
 <div id="navWrapper">
-<nav>
-<ul>
-  <li><a href="index.html">Home</a></li>
+<nav class="clearfix">
+  <button onclick="toggleMenu()">&#9776;</button>
+
+<ul id="primaryNav" class="hide">
+  <li><a href="index.html">About</a></li>
   <li><a href="gallery.html">Leaderboards</a></li>
   <li class="active"><a href="shop.html">Shop</a></li>
   <li><a href="topathletes.html">Top Athletes</a></li>
+  <li><a href="news.html">News</a></li>
 </ul>
 </nav>
 

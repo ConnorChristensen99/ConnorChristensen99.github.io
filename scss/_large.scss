@@ -1,7 +1,7 @@
 
 
 ///CSS RESETING
-header, nav, main, footer {
+main, footer {
     max-width: 1200px;
     margin: auto;
 }
@@ -9,16 +9,9 @@ header, nav, main, footer {
 
 
 ///NAV AND HEADER CSS
-   nav {
+   nav ul li a{
+        padding: .8rem 2rem;
     
-     ul li {
-        flex-basis: auto;
-        }
-   
-        
-     a {
-        padding: .6rem 1rem;
-        }
     }
 
     div#headerWrapper {
@@ -45,5 +38,24 @@ header, nav, main, footer {
         div.card {
             flex-basis: 29%;
         }
+    }
+
+
+
+    div.storyGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+        span {
+            font-size: 1rem;
+        }
+    
+        .lead {
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+        }
+    }
+
+    div#footerGrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   

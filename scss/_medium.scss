@@ -2,23 +2,30 @@
   
   
   ///NAV AND HEADER CSS
+
+  nav button {display: none;}
+
+  nav ul.hide {display:block;}
+
   nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    
- 
-    
-    ul li {
-    flex-basis: auto;
 
-   
+    margin-left: 2%;
+
+
+    li {
+   float: left;
+
+    a {
+       border: none;
+       border-right: 1px solid darken($primaryColor, 10%);
+       padding: .8rem 1rem;
+   }
 }
 
-a {
-    width: 150%;
-    }
 
 }
+
+
 
   div#headerWrapper {
     background-image: url(../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
@@ -49,6 +56,20 @@ main {
     
 }
 
+div.storyGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    span {
+        font-size: 1rem;
+    }
+
+    .lead {
+        grid-column: 1 / span 3;
+        padding-bottom: 5rem;
+    }
+
+}
+
 
 
 div.news {
@@ -56,4 +77,8 @@ div.news {
     column-count: 2;
     column-rule: 1px black solid;
     padding-top: 3rem;
+    }
+
+    div#footerGrid {
+        grid-template-columns: 1fr 1fr;
     }
