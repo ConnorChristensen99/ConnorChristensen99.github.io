@@ -26,11 +26,10 @@
     srcset="Images/FrisbeeLogo-assets/logo1.png 1x, Images/FrisbeeLogo-assets/logo2.png 2x, Images/FrisbeeLogo-assets/logo3.png 3x">
   </figure>
 
-  <div id="newsHeader">
+
   <div id="headerInfo">
   <h1>Ultimate</h1>
   <h2 class="h2hidden">For the disk lovers at heart</h2>
-</div>
 </div>
   
 
@@ -41,16 +40,15 @@
 
 <div id="navWrapper">
 <nav class="clearfix">
-
-    <button onclick="toggleMenu()">&#9776;</button>
+  <button onclick="toggleMenu()">&#9776;</button>
 
 <ul id="primaryNav" class="hide">
-  <li><a href="index.html">About</a></li>
+  <li class="active"><a href="index.html">About</a></li>
   <li><a href="gallery.html">Leaderboards</a></li>
-  <li><a href="shop.html">Shop</a></li>
+  <li ><a href="shop.html">Shop</a></li>
   <li><a href="topathletes.html">Top Athletes</a></li>
   <li><a href="news.html">News</a></li>
-  <li class="active"><a href="cities.html">Cities</a></li>
+  <li><a href="cities.html">Cities</a></li>
 </ul>
 </nav>
 </div>
@@ -58,51 +56,20 @@
 
 
 <main>
-
-<div class="mySlider">
-    <div>
-        <img src="Images/Harry_Potter_character_poster.jpg" alt="Slider">
-        <div id="textSlider"><b>Harry Potter</b> - The Boy Who Lived</div>
+    <div id="thanksPage">
+    <h1>Thanks for your order!</h1>
+    <h2>We'll send out a confirmation email to you shortly.</h2>
     </div>
-
-    <div>
-        <img src="Images/Harry_Potter_character_poster.jpg" alt="Slider">
-        <div id="textSlider"><b>Harry Potter</b> - The Boy Who Lived</div>
-    </div>
-
-</div>
-
 </main>
 
 
 
-
-
-
 <div id="footerWrapper">
-  
-  <footer>&copy; 2021 &bull; Ultimate &bull; Phone 123-555-1234 &bull; Login </footer>
+    
+    <footer>&copy; 2021 &bull; Ultimate &bull; Phone 123-555-1234 &bull; Login </footer>
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-
-<script>
-
-$(document).ready(function(){
-    $('.mySlider').slick({
-        dots: ture,
-        arrows: false,
-        infinite: true,
-        speed: 1000,
-        cssEase: 'ease-out',
-        autoplay: true,
-        autoplaySpeed: 15000
-    });
-});
-
-</script>
-
 </body>
 </html>
+
