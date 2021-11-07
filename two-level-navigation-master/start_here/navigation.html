@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>HTML5 Start Site by Paul Cheney</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+ <h1>Ultimate</h1>
+        <h2>For the Disk Lovers at Heart</h2>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <!-- NAVIGATION HERE -->
+<nav class="clearfix">
+    <button id="hamburgerBtn">
+        <span>&#9776;OPEN</span> 
+        <span>&otimes;CLOSE</span>
+    </button>
+
+    <ul id="primaryNav">
+        <li><a href="../../index.html">About Us</a></li>
+        <li><a href="../../gallery.html">Leaderboards</a></li>
+        <li><a href="../../shop.html">Shop</a></li>
+        <li><a href="../../topathletes.html">Top Athletes</a></li> 
+        <li><a href="../../news.html">News</a></li>
+        <li><a href="../../cities.html">Cities</a></li>
+        <li class="current-menu-item"><a href="navigation.html">Secret Level Navigation</a></li>
+        <li class="parent"><a href="#">Drop down Menu Here</a>
+            <ul>
+                <li><a href="#">This</a></li>
+                <li><a href="#">is</a></li>
+                <li><a href="#">AWESOME</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Welcome to the Secret Level Navigation and Form Page</h1>
+        <form method="get" action="thanks.html">
+
+
+            <fieldset>
+              <legend>Customer Information</legend>
+              <label class="top">First Name* <input type="text" name="fname" required></label>
+              <label class="top">Last Name* <input type="text" name="lname" required></label>
+              <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required> </label>
+              <label class="top">Email <input type="email" name="email" placeholder="example@gmail.com" ></label>
+            </fieldset>
+        
+        
+            <fieldset>
+              <legend>Swag Shop</legend>
+              <label class="sbs">Date Needed <input type="date" name="completedDate"> </label>
+              <label class="sbs">Business Name <input type="text" name="fname"></label>
+              <label class="sbs">Website <input type="url" name="url" placeholder="https://"></label>
+        
+              <label class="sbs">Color
+                <select name="color">
+                  <option value="">Please Select...</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="green">Green</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="pink">Pink</option>
+                  <option value="purple">Purple</option>
+                  <option value="orange">Orange</option>
+                  <option value="random">Random</option>
+              </select>
+            </label>
+        
+        
+            <label class="sbs">Quantity<input type="number" name="quantity"> </label>
+        
+            <div class="radioText"><p>Would you like to make it an exclusive item?</p></div>
+              <label class="choice"><input type="radio" name="choice" value="carbon">    Carbon Fiber</label>
+              <label class="choice"><input type="radio" name="choice" value="steel">    Steel Lined</label>
+        
+            </fieldset>
+        
+        
+        
+            <fieldset>
+        
+              <legend>Payment Information</legend>
+              <label class="top">Full Name* <input type="text" name="fname" placeholder="John Doe" required></label>
+              <label class="top">Card Number* <input type="number" name="lname" required></label>
+              <label class="top">Expiration Date* <input type="date" name="expirdate" required> </label>
+              
+            
+            </fieldset>
+            <input type="submit" value="Purchase my Swag" class="submitBtn">
+        
+          </form>
+        
+    </main>
+    
+<!-- FOOTER HERE -->   
+<div id="footerWrapper">
+
+    <footer>&copy; 2021 &bull; Ultimate &bull; Phone 123-555-1234 &bull; Login </footer>
+
+</div>
+
+
+    <script src="js/toggleMenu.js"></script>
+
+</body>
+</html>

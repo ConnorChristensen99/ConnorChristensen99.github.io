@@ -12,12 +12,9 @@
 
 #hamburgerBtn { display: none; } /* hide the navigation button for all screen widths. We will show it below just for small screens */
 
-//these two variables control the background color and text color
-$menuColor: #56F;
-$menuTextColor: rgba(255,255,255,0.9);
 
 // limit the code below to the max width show in the media query below. This width should match the breakpoint where your suckerfish horizontal menu is to take over.
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 64rem) {
 
 /* Pushes the body tag down to make room for the navigation bar at the top of the page */
     body { padding-top: 2.75rem; }
