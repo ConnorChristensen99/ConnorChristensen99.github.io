@@ -23,13 +23,8 @@
 <body>
 
 
-    <div id="headerWrapper">
-<header>
-  <figure>
-    <img src="Images/FrisbeeLogo-assets/logo2.png" alt="Frisbee Logo" 
-    srcset="Images/FrisbeeLogo-assets/logo1.png 1x, Images/FrisbeeLogo-assets/logo2.png 2x, Images/FrisbeeLogo-assets/logo3.png 3x">
-  </figure>
 
+<header>
   <div id="newsHeader">
   <div id="headerInfo">
   <h1>Ultimate</h1>
@@ -39,11 +34,13 @@
   
 
 </header>
-</div>
+
+
   
 
 
 <div id="navWrapper">
+  <div id="navGrad">
 <nav class="clearfix">
 
     <button onclick="toggleMenu()">&#9776;</button>
@@ -59,20 +56,21 @@
 </ul>
 </nav>
 </div>
+</div>
 
 
 
 <main>
 
 <div class="mySlider">
-    <div>
-        <img src="Images/Harry_Potter_character_poster.jpg" alt="Slider">
-        <div id="textSlider"><b>Harry Potter</b> - The Boy Who Lived</div>
+    <div class="firstSlider">
+        <img src="Images/Utah/Utah1.jpg" alt="Slider">
+        <div id="textSlider"><b>Salt Lake City</b> - Utah</div>
     </div>
 
     <div>
-        <img src="Images/Harry_Potter_character_poster.jpg" alt="Slider">
-        <div id="textSlider"><b>Harry Potter</b> - The Boy Who Lived</div>
+        <img src="Images/Utah/Utah2.jpg" alt="Slider">
+        <div id="textSlider"><b>Salt Lake City</b> - Utah</div>
     </div>
 
 </div>
@@ -91,9 +89,6 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script type="text/javascript" src="slick/slick.min.js"></script>
 
@@ -102,9 +97,13 @@
 
 $(document).ready(function(){
     $('.mySlider').slick({
-        dots: true,
+      dots: true,
         arrows: false,
+        infinite: true,
+        speed: 1000,
+        cssEase: 'ease-out',
         autoplay: true,
+        autoplaySpeed: 3000,
     });
 });
 

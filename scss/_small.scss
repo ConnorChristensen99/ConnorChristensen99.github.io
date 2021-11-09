@@ -29,37 +29,32 @@ body {
 
 div#headerWrapper {
     background-image: url(../Images/Frisbee_Header_Image-assets/header_small-min.jpg);
-    height: 175px;
+    filter: brightness(50%);
+    max-width: 1024px;
 }
 
-div#newsHeader {
-    h1, h2 {
-        display: none;
-    }
-}
+
 header {
-    padding: 4rem 2%;
+    background: url(../Images/Utah/Utah3.jpg) no-repeat;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     color: white;
+    height: 120px;
 
-    figure {
-        margin: 0;
-        padding-right: 20px;
-    }
 
     h1 {
-        margin: 0;
+        margin: 2%;
         font-size: 1.5rem;
         font-weight: $heavyWeight;
     }//end of h1
 
     h2 {
-        margin: 0;
+        margin: 2%;
         font-weight: $regularWeight;
     }//end of h2
 
 } 
+
 ///END HEADER
 
 
@@ -67,13 +62,11 @@ header {
 
 
 ///CSS NAVIGATION
-#navWrapper {
-    background-color: darken($primaryColor, 10%);
-}
 nav {
+    background-image: linear-gradient($primaryColor, rgb(223, 222, 222));
 
     button {
-        margin: .2rem 2%;
+        margin: 0 2%;
         background-color: transparent;
         border: none;
         font-size: 1.8rem;
@@ -94,21 +87,21 @@ nav {
     }
 
  li.active a {
-    background-color: darken($primaryColor, 20%);
+    background-image: linear-gradient($primaryColor, $primaryColor);
     }
 
  a {
     display: block;
     padding: .8rem 0;
-    color: #eee;
+    color: black;
     text-align: center;
     text-decoration: none;
-    background-color: lighten($primaryColor, 10%);
+    background-image: linear-gradient($primaryColor, rgb(223, 222, 222));
     border-top: 1px solid darken($primaryColor, 15%);
     }
 
  a:hover {
-     background-color: darken($primaryColor, 10%);
+    background-image: linear-gradient($primaryColor, $primaryColor);
 }
 
 }
@@ -552,6 +545,11 @@ div#thanksPage {
     justify-content: center;
 }
 
+div.mySlider {
+    width:100%;
+    height: auto;
+
+}
 ///END MAIN
 
 
@@ -559,13 +557,11 @@ div#thanksPage {
 
 ///CSS FOOTER
 
-div#footerWrapper {
-    background-color: $primaryColor;
-}
 footer {
     justify-content: center;
     text-align: center;
     padding: 1rem 2%;
+    background-color: $primaryColor;
 
     
  
