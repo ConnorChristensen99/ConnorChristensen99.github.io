@@ -55,6 +55,20 @@ header, nav, main, footer {
         }
     }
 
+    div.cards {
+        column-count: 4;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    div.indCard {
+        width: 25%;
+        height: auto;
+    }
+
+
     div#footerGrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

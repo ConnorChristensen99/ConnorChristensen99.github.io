@@ -36,6 +36,20 @@ div#headerInfo {
     flex-wrap: wrap;
 }
 
+
+
+div.cards {
+    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+div.indCard {
+    width: 50%;
+    height: auto;
+}
   
 
 

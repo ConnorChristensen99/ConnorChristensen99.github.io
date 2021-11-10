@@ -396,11 +396,6 @@ body {
   font-size: 16px;
   font-weight: 400; }
 
-div#headerWrapper {
-  background-image: url(../Images/Frisbee_Header_Image-assets/header_small-min.jpg);
-  filter: brightness(50%);
-  max-width: 1024px; }
-
 header {
   background: url(../Images/Utah/Utah3.jpg) no-repeat;
   display: flex;
@@ -826,6 +821,54 @@ div.mySlider {
   width: 100%;
   height: auto; }
 
+div.cards {
+  border: none; }
+
+div.cards a:hover {
+  background: none;
+  text-shadow: 0 0 8px black; }
+
+div.cards div:nth-child(1) {
+  background-image: url("../Images/HoverCards/Dining-Hover.jpg");
+  text-align: center;
+  background-repeat: no-repeat; }
+
+div.cards div:nth-child(1) a {
+  background-color: #d3d35e; }
+
+div.cards div:nth-child(2) {
+  background-image: url("../Images/HoverCards/City-Hover.jpg");
+  text-align: center;
+  background-repeat: no-repeat; }
+
+div.cards div:nth-child(2) a {
+  background-color: blue; }
+
+div.cards div:nth-child(3) {
+  background-image: url("../Images/HoverCards/Bus-Hover.jpg");
+  text-align: center;
+  background-repeat: no-repeat; }
+
+div.cards div:nth-child(3) a {
+  background-color: green; }
+
+div.cards div:nth-child(4) {
+  background-image: url("../Images/HoverCards/Stay-Hover.jpg");
+  text-align: center;
+  background-repeat: no-repeat; }
+
+div.cards div:nth-child(4) a {
+  background-color: purple; }
+
+div.cards a {
+  display: block;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 10% 2%;
+  transition: all .5s ease-in;
+  color: white;
+  height: 163px; }
+
 footer {
   justify-content: center;
   text-align: center;
@@ -1074,6 +1117,16 @@ div#footerGrid {
   div#headerInfo {
     flex-wrap: wrap; }
 
+  div.cards {
+    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  div.indCard {
+    width: 50%;
+    height: auto; }
+
   main .medium-1 {
     flex-basis: 8.3333333333%; }
   main .medium-2 {
@@ -1168,6 +1221,16 @@ div#footerGrid {
     div.storyGrid .lead {
       grid-column: 1 / span 3;
       grid-row: 1 / span 2; }
+
+  div.cards {
+    column-count: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  div.indCard {
+    width: 25%;
+    height: auto; }
 
   div#footerGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr; } }
