@@ -824,8 +824,9 @@ div.mySlider {
 div.cards {
   border: none; }
 
-div.cards a:hover {
+div.cards .indCard a:hover {
   background: none;
+   color: yellow;
   text-shadow: 0 0 8px black; }
 
 div.cards div:nth-child(1) {
