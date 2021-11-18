@@ -72,4 +72,33 @@ header, nav, main, footer {
     div#footerGrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    .main-content {
+        width: 75rem;
+        grid-template-areas:
+            "h1 h1 h1"
+            "ipad-h3 ipad-h3 ipad-h3"
+            "ipad-p ipad-p ipad-img"
+            "sony-img sony sony"
+            "sony-img sony sony"
+            "surface-h3 surface-h3 surface-h3"
+            "surface-p surface-p surface-img"
+        ;
+    }
+    
+    .sony {
+        display: flex;
+        flex-direction: column;
+        grid-area: sony;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+    
+    .sony-h3 {
+        display: none;
+    }
+    .sony-p {
+        display: none;
+    }
   

@@ -96,3 +96,27 @@ div.news {
     div#footerGrid {
         grid-template-columns: 1fr 1fr;
     }
+
+
+    .main-content {
+        width: 80%;
+        margin: 0px 10px 40px 10px;
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "h1 h1 h1"
+            "ipad-h3 ipad-h3 ipad-img"
+            "ipad-p ipad-p ipad-img"
+            "sony-img sony-h3 sony-h3"
+            "sony-img sony-p sony-p"
+            "surface-h3 surface-h3 surface-img"
+            "surface-p surface-p surface-img"
+        ;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        h3, p {
+            margin: 0;
+        }
+    }
