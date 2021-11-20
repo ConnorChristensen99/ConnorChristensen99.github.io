@@ -1298,13 +1298,5 @@ div#footerGrid {
     flex-direction: column;
     grid-area: sony; }
     .sony h3 {
-      margin-bottom: 20px; }
-
-  .sony-h3 {
-    display: none; }
-
-  .sony-p {
-    display: none; } }
+      margin-bottom: 20px; } }
 /*end of media query*/
-
-/*# sourceMappingURL=styles.css.map */
