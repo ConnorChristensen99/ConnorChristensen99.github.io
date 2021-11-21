@@ -1,0 +1,58 @@
+///NAV AND HEADER CSS
+    
+nav button {display: none;}
+
+nav ul.hide {display:block;}
+
+nav ul {
+
+  margin-left: 2%;
+
+
+  li {
+ float: left;
+
+  a {
+     border: none;
+     border-right: 1px solid darken(rgb(59, 147, 199), 10%);
+     padding: .8rem 1rem;
+ }
+}
+
+
+}
+
+
+
+div#headerWrapper {
+  background-image: url(../../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
+  height: 250px;
+}
+
+div#headerInfo {
+  flex-wrap: wrap;
+}
+
+
+.main-content {
+    width: 80%;
+    margin: 0px 10px 40px 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "h1 h1 h1"
+        "ipad-h3 ipad-h3 ipad-img"
+        "ipad-p ipad-p ipad-img"
+        "sony-img sony-h3 sony-h3"
+        "sony-img sony-p sony-p"
+        "surface-h3 surface-h3 surface-img"
+        "surface-p surface-p surface-img"
+    ;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h3, p {
+        margin: 0;
+    }
+}
