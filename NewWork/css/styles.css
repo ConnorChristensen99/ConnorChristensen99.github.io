@@ -385,18 +385,12 @@ template {
   display: none; }
 
 header {
-  background: url(../../Images/Utah/Utah3.jpg) no-repeat;
   display: flex;
+  justify-content: center;
+  background: url(../../Images/Utah/Utah3.jpg) no-repeat;
   align-items: flex-end;
   color: white;
   height: 120px; }
-  header h1 {
-    margin: 2%;
-    font-size: 1.5rem;
-    font-weight: 600; }
-  header h2 {
-    margin: 2%;
-    font-weight: 400; }
 
 nav {
   background-image: linear-gradient(#3b93c7, #dfdede); }
@@ -448,6 +442,44 @@ div#footerGrid {
   display: table;
   clear: both; }
 
+.main-content {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "h1" "ipad-h3" "ipad-img" "ipad-p" "sony-h3" "sony-img" "sony-p" "surface-h3" "surface-img" "surface-p"; }
+  .main-content img {
+    width: 100%;
+    height: auto; }
+
+.h1 {
+  grid-area: h1; }
+
+.ipad-h3 {
+  grid-area: ipad-h3; }
+
+.ipad-img {
+  grid-area: ipad-img; }
+
+.ipad-p {
+  grid-area: ipad-p; }
+
+.sony-h3 {
+  grid-area: sony-h3; }
+
+.sony-img {
+  grid-area: sony-img; }
+
+.sony-p {
+  grid-area: sony-p; }
+
+.surface-h3 {
+  grid-area: surface-h3; }
+
+.surface-img {
+  grid-area: surface-img; }
+
+.surface-p {
+  grid-area: surface-p; }
+
 @media only screen and (min-width: 560px) {
   nav button {
     display: none; }
@@ -498,7 +530,7 @@ div#footerGrid {
 
   .main-content {
     width: 75rem;
-    grid-template-areas: "h1 h1 h1" "ipad-h3 ipad-h3 ipad-h3" "ipad-p ipad-p ipad-img" "sony-img sony sony" "sony-img sony sony" "surface-h3 surface-h3 surface-h3" "surface-p surface-p surface-img"; }
+    grid-template-areas: "h1 h1 h1" "ipad-h3 ipad-h3 ipad-h3" "ipad-p ipad-p ipad-img" "sony-img sony-h3 sony-h3" "sony-img sony-p sony-p" "surface-h3 surface-h3 surface-h3" "surface-p surface-p surface-img"; }
 
   .sony {
     display: flex;
