@@ -1,3 +1,5 @@
+
+
 header {
     display: flex;
     justify-content: center;
@@ -48,6 +50,14 @@ nav {
     background-image: linear-gradient(rgb(59, 147, 199), rgb(59, 147, 199));
 }
 
+}
+
+.medNav {
+    display: none;
+}
+
+#navWrapper {
+    display: none;
 }
 ///END NAVIGATION
 

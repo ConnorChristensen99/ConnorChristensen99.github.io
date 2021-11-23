@@ -496,6 +496,12 @@ div#footerGrid {
         border-right: 1px solid #2e76a1;
         padding: .8rem 1rem; }
 
+  .smallNav {
+    display: none; }
+
+  .primaryNav {
+    display: none; }
+
   div#headerWrapper {
     background-image: url(../../Images/Frisbee_Header_Image-assets/header_medium-min.jpg);
     height: 250px; }
@@ -537,7 +543,10 @@ div#footerGrid {
     flex-direction: column;
     grid-area: sony; }
     .sony h3 {
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+
+  .medNav {
+    display: none; } }
 /*end of media query*/
 
 /*# sourceMappingURL=styles.css.map */
