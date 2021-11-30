@@ -4,25 +4,33 @@ nav button {display: none;}
 
 nav ul.hide {display:block;}
 
-nav ul {
 
-  margin-left: 2%;
+  .medNav {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    background: $primaryColor;
+    border-bottom: solid 1px $third;
+    a {
+        width: 100%;
+        height: 50px;
+        border-bottom: solid 1px $third;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $third;
+        font-family: $fontFamily;
+    }
+  }
 
-
-  li {
- float: left;
-
-  a {
-     border: none;
-     border-right: 1px solid darken(rgb(59, 147, 199), 10%);
-     padding: .8rem 1rem;
- }
-}
-
-
-}
 
 .smallNav {
+  display: none;
+}
+
+#navWrapper {
   display: none;
 }
 

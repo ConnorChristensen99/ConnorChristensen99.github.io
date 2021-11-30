@@ -7,10 +7,40 @@ header, nav, main, footer {
 
 
 ///NAV AND HEADER CSS
-   nav ul li a{
-        padding: .8rem 2rem;
-    
+   #navWrapper {
+    display: flex;
+    width: 100vw;
+    height: 50px;
+    background: $primaryColor;
+    justify-content: center;
+    align-items: center;
+    div {
+        width: 75rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        a {
+            text-decoration: none;
+            width: 10%;
+            height: 100%;
+            color: $third;
+            font-family: $fontFamily;
+            border-left: solid 1px $third;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: ease-in-out 0.2s;
+            &:hover {
+                background: darken($primaryColor, 10%);
+            }
+        }
+        #headsets {
+            border-right: solid 1px $third;
+        }
     }
+   }
+
+
 
     div#headerWrapper {
         background-image: url(../../Images/Frisbee_Header_Image-assets/header_large-min.jpg);
@@ -39,13 +69,8 @@ header, nav, main, footer {
             margin-bottom: 20px;
         }
     }
-  
+
     .medNav {
         display: none;
     }
-
-    .smallNav {
-        display: none;
-    }
-
-    
+  
