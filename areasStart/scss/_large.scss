@@ -1,0 +1,40 @@
+
+.pageWrapper {
+        max-width: 64rem;
+        margin:auto;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "footer";
+    
+        grid-template-columns: auto auto;
+    }
+
+
+  
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li {
+        flex-basis: auto;
+
+        a {
+            padding: .6rem 1rem;    
+        }
+}
+
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
