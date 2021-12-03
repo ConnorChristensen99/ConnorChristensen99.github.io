@@ -26,9 +26,20 @@ body {
 header {
     grid-area: header;
     padding: .5rem 2%;
-    background-color: #ffa8f0;
+    background-color: #247fcab0;
     h1 {margin: 0;}
     h2 {margin: 0; font-weight: normal;}
+}
+
+.headerInfo {
+    display: flex;
+    align-items: center;
+}
+
+.headerWords {
+    display: flex;
+    padding-left: 2%;
+    flex-direction: column;
 }
 
 
@@ -46,7 +57,7 @@ a.myjump{
 
 nav {
     grid-area: navigation;
-    background-color: #b68aff;
+    background-color: #247fca;
     height: 100vh;
 }
 nav ul {

@@ -327,12 +327,21 @@ body {
 header {
   grid-area: header;
   padding: .5rem 2%;
-  background-color: #ffa8f0; }
+  background-color: #247fcab0; }
   header h1 {
     margin: 0; }
   header h2 {
     margin: 0;
     font-weight: normal; }
+
+.headerInfo {
+  display: flex;
+  align-items: center; }
+
+.headerWords {
+  display: flex;
+  padding-left: 2%;
+  flex-direction: column; }
 
 /*----------- NAVIGATION --------------*/
 a.myjump {
@@ -346,7 +355,7 @@ a.myjump {
 
 nav {
   grid-area: navigation;
-  background-color: #b68aff;
+  background-color: #247fca;
   height: 100vh; }
 
 nav ul {
@@ -422,7 +431,21 @@ footer {
     height: auto; }
 
   /*----------- MAIN --------------*/
-  /*----------- FOOTER --------------*/ }
+  /*----------- FOOTER --------------*/
+  .ipadWhole {
+    margin-bottom: 10rem; }
+
+  .ipad-img {
+    float: right;
+    padding-left: 0 5% 0 5%; }
+
+  .sony-img {
+    float: left;
+    padding-right: 5%; }
+
+  .surface-img {
+    float: right;
+    padding-left: 5%; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   .pageWrapper {
@@ -430,9 +453,6 @@ footer {
     margin: auto;
     grid-template-areas: "header" "navigation" "main" "footer";
     grid-template-columns: auto auto; }
-    .pageWrapper .main-content {
-      width: 75rem;
-      grid-template-areas: "h1 h1 h1" "ipad-h3 ipad-h3 ipad-h3" "ipad-p ipad-p ipad-img" "sony-img sony-h3 sony-h3" "sony-img sony-p sony-p" "surface-h3 surface-h3 surface-h3" "surface-p surface-p surface-img"; }
 
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
