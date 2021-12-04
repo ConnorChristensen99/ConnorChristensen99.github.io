@@ -1,3 +1,5 @@
+@import "variables";
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -9,49 +11,67 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 16px;
     font-family: Verdana, sans-serif;
+    
 }
+
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: rgb(201, 169, 125);
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: rgb(231, 148, 40);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
 }
 nav ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 nav ul li {
+    flex-basis: 33.3%;
     float: left;
     width: 25%;
+    
 }
 nav ul li a {
     display: block;
-    background-color: #444;
+    width: 100%;
+    background-color: rgb(231, 148, 40);
     color: #eee;
     border-left: 1px solid #777;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
+    text-transform: uppercase;
 }
 nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
-    background-color: #eee;
+    background-color: rgb(241, 210, 169);
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: rgb(153, 94, 16);
     color: #fff;
+}
+
+.navRules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
 }
 /*----------- MAIN --------------*/
 main {
@@ -62,12 +82,9 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
+    color: white;
+
 }
-
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -75,3 +92,51 @@ footer {
   display: table;
   clear: both;
 }
+
+#myCards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+    float: left;
+    font-size: 2rem;
+    padding: 0 1.2rem;
+}
+
+
+span {
+    display: flex;
+    align-items: center;
+    background-color: sandybrown;
+}
+
+
+#myCards figure {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(124, 119, 119, 0.651);
+            width: 100%;
+            padding: .5rem 2vw;
+            color: white;
+
+        }
+}
+
+section {
+    margin: 1%;
+}
+

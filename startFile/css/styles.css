@@ -322,7 +322,7 @@ body {
 /*----------- HEADER --------------*/
 header {
   padding: .5rem 2%;
-  background-color: #ddd; }
+  background-color: #c9a97d; }
 
 header h1 {
   margin: 0; }
@@ -333,37 +333,51 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #666; }
+  background-color: #e79428;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999; }
 
 nav ul {
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0; }
 
 nav ul li {
+  flex-basis: 33.3%;
   float: left;
   width: 25%; }
 
 nav ul li a {
   display: block;
-  background-color: #444;
+  width: 100%;
+  background-color: #e79428;
   color: #eee;
   border-left: 1px solid #777;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .9rem;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 nav ul li:first-child a {
   border-left: none; }
 
 nav ul li a:hover {
-  background-color: #eee;
+  background-color: #f1d2a9;
   color: #333; }
 
 nav ul li.active a {
-  background-color: #000;
+  background-color: #995e10;
   color: #fff; }
+
+.navRules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem; }
 
 /*----------- MAIN --------------*/
 main {
@@ -372,9 +386,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #ddd;
-  padding: .5rem 2%;
-  text-align: center; }
+  color: white; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -382,13 +394,45 @@ footer {
   display: table;
   clear: both; }
 
+#myCards {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+
+.icons {
+  float: left;
+  font-size: 2rem;
+  padding: 0 1.2rem; }
+
+span {
+  display: flex;
+  align-items: center;
+  background-color: sandybrown; }
+
+#myCards figure {
+  margin: 0;
+  width: 100%;
+  position: relative; }
+  #myCards figure img {
+    width: 100%; }
+  #myCards figure figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(124, 119, 119, 0.651);
+    width: 100%;
+    padding: .5rem 2vw;
+    color: white; }
+
+section {
+  margin: 1%; }
+
 @media only screen and (min-width: 35rem) {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
-  nav ul {
-    margin-left: 2%; }
-
   nav ul li {
     width: auto; }
 
@@ -402,10 +446,13 @@ footer {
     padding: .5rem 1rem; }
 
   /*----------- MAIN --------------*/
+  #myCards {
+    grid-template-columns: 1fr 1fr; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav, main, footer {
+  header, main, footer {
     max-width: 64rem;
     margin: auto; }
 
@@ -415,3 +462,5 @@ footer {
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/ }
 /* end of media query */
+
+/*# sourceMappingURL=styles.css.map */
