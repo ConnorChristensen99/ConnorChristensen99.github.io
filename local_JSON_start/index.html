@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather Application</title>
+</head>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/styles.css" rel="stylesheet">
+
+
+<body>
+
+    <header>
+        <h1>Weather Today</h1>
+   </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Report a Storm</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li class="active"><a href="#">Weather Today</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="weatherforecast">
+
+        </div>
+        
+        <h1>Forecast</h1>
+        <h2>Weather Conditions for <span id="place">City</span></h2>
+        <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+        <p>Current Wind Speed is <span id="windSpeed">xx</span>mph</p>
+        <img id="weather_icon" src="#" alt="current weather">
+    </main>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
+
+
