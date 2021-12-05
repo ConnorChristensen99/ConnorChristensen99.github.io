@@ -1,13 +1,26 @@
+header,nav, .comps {
+    max-width: 64rem;
+    margin:auto;
+}
 .pageWrapper {
-    margin: auto;
-    grid-template-areas: 
-    "header header"
-    "navigation main"
-    "footer footer";
+        margin:auto;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "footer";
+    
+        grid-template-columns: auto auto;
+    }
 
-    grid-template-columns: 150px auto;
+   
+header, nav {
+    width: 100%;
 }
 
+.medNav {
+    display: none;
+}
 
 
 
@@ -31,6 +44,7 @@
     font-weight: 800;
 }
 
+
 /*----------- HEADER --------------*/
 
 header {
@@ -47,9 +61,16 @@ nav {
 }
 
 .icons {
-    float: left;
+    float: none;
+    padding-right: 5%;
+    margin-bottom: 0;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 nav ul li {
     flex-basis: auto;
 
@@ -65,21 +86,10 @@ nav ul li {
 
 
 /*----------- FOOTER --------------*/
-    
-.ipadWhole {
-    margin-bottom: 10rem;
-}
-.ipad-img {
-    float: right;
-    padding-left: 0 5% 0 5%;
-}
 
-.sony-img {
-    float: left;
-    padding-right: 5%;
-}
 
-.surface-img {
-    float: right;
-    padding-left: 5%;
-}
+ .comps {
+     column-count: 2;
+ }
+
+

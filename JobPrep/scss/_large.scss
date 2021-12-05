@@ -1,24 +1,4 @@
 
-header,nav {
-    max-width: 64rem;
-    margin:auto;
-}
-.pageWrapper {
-        margin:auto;
-        grid-template-areas: 
-        "header"
-        "navigation"
-        "main"
-        "footer";
-    
-        grid-template-columns: auto auto;
-    }
-
-   
-header, nav {
-    width: 100%;
-}
-
 
 /*----------- BODY --------------*/
 

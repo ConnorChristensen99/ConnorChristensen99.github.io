@@ -452,11 +452,27 @@ footer {
     column-count: 3;
     column-gap: 40px; }
 
+.first {
+  margin-left: 5%; }
+
+.second {
+  margin-right: 5%; }
+
 @media only screen and (min-width: 35rem) {
+  header, nav, .comps {
+    max-width: 64rem;
+    margin: auto; }
+
   .pageWrapper {
     margin: auto;
-    grid-template-areas: "header header" "navigation main" "footer footer";
-    grid-template-columns: 150px auto; }
+    grid-template-areas: "header" "navigation" "main" "footer";
+    grid-template-columns: auto auto; }
+
+  header, nav {
+    width: 100%; }
+
+  .medNav {
+    display: none; }
 
   /*----------- BODY --------------*/
   .mainBanner {
@@ -485,7 +501,14 @@ footer {
     height: auto; }
 
   .icons {
-    float: left; }
+    float: none;
+    padding-right: 5%;
+    margin-bottom: 0; }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
 
   nav ul li {
     flex-basis: auto; }
@@ -496,34 +519,10 @@ footer {
 
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
-  .ipadWhole {
-    margin-bottom: 10rem; }
-
-  .ipad-img {
-    float: right;
-    padding-left: 0 5% 0 5%; }
-
-  .sony-img {
-    float: left;
-    padding-right: 5%; }
-
-  .surface-img {
-    float: right;
-    padding-left: 5%; } }
+  .comps {
+    column-count: 2; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
-  header, nav {
-    max-width: 64rem;
-    margin: auto; }
-
-  .pageWrapper {
-    margin: auto;
-    grid-template-areas: "header" "navigation" "main" "footer";
-    grid-template-columns: auto auto; }
-
-  header, nav {
-    width: 100%; }
-
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
