@@ -1,0 +1,85 @@
+.pageWrapper {
+    margin: auto;
+    grid-template-areas: 
+    "header header"
+    "navigation main"
+    "footer footer";
+
+    grid-template-columns: 150px auto;
+}
+
+
+
+
+
+/*----------- BODY --------------*/
+
+.mainBanner {
+    column-count: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.first {
+    margin-right: 6%;
+    text-align: left;
+    padding-bottom: 3%;
+}
+
+.second {
+    text-align: right;
+    font-weight: 800;
+}
+
+/*----------- HEADER --------------*/
+
+header {
+    border-bottom: rgba(138, 137, 137, 0.719) 1px solid;
+}
+
+/*----------- NAVIGATION --------------*/
+a.myjump {
+    display: none;
+}
+
+nav {
+    height: auto;
+}
+
+.icons {
+    float: left;
+}
+
+nav ul li {
+    flex-basis: auto;
+
+    a {
+        display: flex;
+        padding: .6rem;  
+        align-items: center;  
+    }
+}
+
+/*----------- MAIN --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
+.ipadWhole {
+    margin-bottom: 10rem;
+}
+.ipad-img {
+    float: right;
+    padding-left: 0 5% 0 5%;
+}
+
+.sony-img {
+    float: left;
+    padding-right: 5%;
+}
+
+.surface-img {
+    float: right;
+    padding-left: 5%;
+}

@@ -1,0 +1,60 @@
+
+header,nav {
+    max-width: 64rem;
+    margin:auto;
+}
+.pageWrapper {
+        margin:auto;
+        grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "footer";
+    
+        grid-template-columns: auto auto;
+    }
+
+   
+header, nav {
+    width: 100%;
+}
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li {
+        flex-basis: auto;
+
+        a {
+            display: flex;
+            padding: .6rem;  
+            align-items: center;  
+        }
+}
+
+.icons {
+    float: none;
+    padding-right: 5%;
+    margin-bottom: 0;
+}
+
+
+/*----------- MAIN --------------*/
+
+
+
+
+/*----------- FOOTER --------------*/
+    
