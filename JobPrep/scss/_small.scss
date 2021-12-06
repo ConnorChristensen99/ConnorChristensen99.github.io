@@ -1,19 +1,10 @@
+@import "variables";
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
-.pageWrapper {
-    display: grid;
-    grid-template-areas: 
-    "hamburger"
-    "header"
-    "main"
-    "footer"
-    "navigation";
-}
 
 /*----------- BODY --------------*/
 body {
@@ -24,6 +15,7 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+    border-bottom: rgba(138, 137, 137, 0.719) 1px solid;
     grid-area: header;
     padding: .5rem 2%;
     padding-bottom: 0;
@@ -42,7 +34,9 @@ header {
     flex-direction: column;
 }
 
-
+nav {
+    display: none;
+}
 
 /*----------- NAVIGATION --------------*/
 a.myjump{
@@ -57,7 +51,6 @@ a.myjump{
 
 nav {
     grid-area: navigation;
-    height: 100vh;
 }
 nav ul {
     list-style-type: none;
@@ -65,7 +58,6 @@ nav ul {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 nav ul li {
     flex-basis: 33.3%;
@@ -159,23 +151,134 @@ footer {
     }
 }
 
-.comps {
+section {
+    columns: 3;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
     img {
+        width: 20%;
+        height: auto;
         margin: .5rem 1rem;
-        column-count: 3;
-        column-gap: 40px;
-
     }
 }
 
 .first {
+    padding-top: 2%;
     margin-left: 5%;
 }
 
 .second {
-    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 2%;
 }
+
+.icons {
+    float: none;
+    padding-right: 5%;
+    margin-bottom: 0;
+}
+
+.cardsinfo h2 {
+    font-weight: 300;
+    padding-left: 1%;
+    color: #0480b1;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.card {
+    max-width: 210px;
+    border: 1px solid #999;
+    flex-basis: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    margin-bottom: 2rem;
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        p {
+            text-align: left;
+            padding: 2%;
+            font-size: 13px;
+        }
+
+        h2 {
+            text-align: left;
+            padding-left: 2%;
+        }
+    }
+
+    .bottom {
+        width: 95% ;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+            "infra" 
+            "tech" 
+            "ad" 
+            "live";
+        margin-top: 30px;
+        div {
+            img {
+                width: 100%;
+                height: auto;
+            }
+            h3 {
+                color: $prime;
+                font-family: $font;
+                padding-left: 2%;
+            }
+            p {
+                font-family: $font;
+                padding-left: 2%;
+            }
+        }
+    }
+
+    #infra {
+        grid-area: infra;
+    }
+    #tech {
+        grid-area: tech;
+    }
+    #live {
+        grid-area: live;
+    }
+    #ad {
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 5px;
+        grid-area: ad;
+        height: auto;
+    }
+    .growth {
+        margin-top: 3px;
+    }
+    
+    .growth-btn {
+        width: 50%;
+        height: 40px;
+        color: white;
+        background: $prime;
+        border: none;
+        border-radius: 5px;
+        margin-top: 8px;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+        font-family: $font;
+        &:hover {
+            background: darken($prime, 10%);
+        }
+    }

@@ -1,27 +1,11 @@
-header,nav, .comps {
+header,nav, section,.cardsinfo, .bottomCards {
     max-width: 64rem;
     margin:auto;
 }
-.pageWrapper {
-        margin:auto;
-        grid-template-areas: 
-        "header"
-        "navigation"
-        "main"
-        "footer";
-    
-        grid-template-columns: auto auto;
-    }
-
    
 header, nav {
     width: 100%;
 }
-
-.medNav {
-    display: none;
-}
-
 
 
 
@@ -40,23 +24,37 @@ header, nav {
 }
 
 .second {
+    margin-right: 5%;
     text-align: right;
     font-weight: 800;
 }
 
 
-/*----------- HEADER --------------*/
+div.cards {
+    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-header {
-    border-bottom: rgba(138, 137, 137, 0.719) 1px solid;
 }
 
+.card {
+    width: 100%;
+    height: auto;
+}
+
+/*----------- HEADER --------------*/
+
+
 /*----------- NAVIGATION --------------*/
+
 a.myjump {
     display: none;
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
     height: auto;
 }
 
@@ -88,8 +86,17 @@ nav ul li {
 /*----------- FOOTER --------------*/
 
 
- .comps {
-     column-count: 2;
- }
 
+.cards h2 {
+    padding: none;
+}
 
+.bottom {
+    width: 95% ;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "infra tech" 
+        "live ad";
+}

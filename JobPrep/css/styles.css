@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -314,10 +316,6 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.pageWrapper {
-  display: grid;
-  grid-template-areas: "hamburger" "header" "main" "footer" "navigation"; }
-
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
@@ -325,6 +323,7 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+  border-bottom: rgba(138, 137, 137, 0.719) 1px solid;
   grid-area: header;
   padding: .5rem 2%;
   padding-bottom: 0; }
@@ -345,6 +344,9 @@ header {
   padding-left: 2%;
   flex-direction: column; }
 
+nav {
+  display: none; }
+
 /*----------- NAVIGATION --------------*/
 a.myjump {
   display: block;
@@ -356,16 +358,14 @@ a.myjump {
   padding-left: 2%; }
 
 nav {
-  grid-area: navigation;
-  height: 100vh; }
+  grid-area: navigation; }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; }
+  flex-wrap: wrap; }
 
 nav ul li {
   flex-basis: 33.3%; }
@@ -443,36 +443,119 @@ footer {
     color: white;
     margin-left: 2rem; }
 
-.comps {
+section {
+  columns: 3;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
-  .comps img {
-    margin: .5rem 1rem;
-    column-count: 3;
-    column-gap: 40px; }
+  section img {
+    width: 20%;
+    height: auto;
+    margin: .5rem 1rem; }
 
 .first {
+  padding-top: 2%;
   margin-left: 5%; }
 
 .second {
-  margin-right: 5%; }
+  margin-left: 5%;
+  padding-bottom: 2%; }
+
+.icons {
+  float: none;
+  padding-right: 5%;
+  margin-bottom: 0; }
+
+.cardsinfo h2 {
+  font-weight: 300;
+  padding-left: 1%;
+  color: #0480b1; }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; }
+
+div.card {
+  max-width: 210px;
+  border: 1px solid #999;
+  flex-basis: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  margin-bottom: 2rem; }
+  div.card img {
+    height: auto;
+    width: 100%; }
+  div.card p {
+    text-align: left;
+    padding: 2%;
+    font-size: 13px; }
+  div.card h2 {
+    text-align: left;
+    padding-left: 2%; }
+
+.bottom {
+  width: 95%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: "infra"  "tech"  "ad"  "live";
+  margin-top: 30px; }
+  .bottom div img {
+    width: 100%;
+    height: auto; }
+  .bottom div h3 {
+    color: #0480b1;
+    font-family: "Lato", sans-serif;
+    padding-left: 2%; }
+  .bottom div p {
+    font-family: "Lato", sans-serif;
+    padding-left: 2%; }
+
+#infra {
+  grid-area: infra; }
+
+#tech {
+  grid-area: tech; }
+
+#live {
+  grid-area: live; }
+
+#ad {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 5px;
+  grid-area: ad;
+  height: auto; }
+
+.growth {
+  margin-top: 3px; }
+
+.growth-btn {
+  width: 50%;
+  height: 40px;
+  color: white;
+  background: #0480b1;
+  border: none;
+  border-radius: 5px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  font-family: "Lato", sans-serif; }
+  .growth-btn:hover {
+    background: #035c7f; }
 
 @media only screen and (min-width: 35rem) {
-  header, nav, .comps {
+  header, nav, section, .cardsinfo, .bottomCards {
     max-width: 64rem;
     margin: auto; }
 
-  .pageWrapper {
-    margin: auto;
-    grid-template-areas: "header" "navigation" "main" "footer";
-    grid-template-columns: auto auto; }
-
   header, nav {
     width: 100%; }
-
-  .medNav {
-    display: none; }
 
   /*----------- BODY --------------*/
   .mainBanner {
@@ -486,18 +569,28 @@ footer {
     padding-bottom: 3%; }
 
   .second {
+    margin-right: 5%;
     text-align: right;
     font-weight: 800; }
 
-  /*----------- HEADER --------------*/
-  header {
-    border-bottom: rgba(138, 137, 137, 0.719) 1px solid; }
+  div.cards {
+    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
 
+  .card {
+    width: 100%;
+    height: auto; }
+
+  /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   a.myjump {
     display: none; }
 
   nav {
+    display: flex;
+    justify-content: flex-end;
     height: auto; }
 
   .icons {
@@ -519,11 +612,33 @@ footer {
 
   /*----------- MAIN --------------*/
   /*----------- FOOTER --------------*/
-  .comps {
-    column-count: 2; } }
+  .cards h2 {
+    padding: none; }
+
+  .bottom {
+    width: 95%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "infra tech"  "live ad"; } }
 /* end of media query */
 @media only screen and (min-width: 64rem) {
   /*----------- BODY --------------*/
+  .bottom {
+    width: 53rem;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "infra tech ad"  "live live ad"; }
+    .bottom div p {
+      font-size: 10pt; }
+
+  .growth-btn {
+    width: 150px;
+    height: 30px; }
+
+  .growth-text {
+    font-size: 10pt; }
+
   /*----------- HEADER --------------*/
   /*----------- NAVIGATION --------------*/
   nav ul {
@@ -544,6 +659,12 @@ footer {
     margin-bottom: 0; }
 
   /*----------- MAIN --------------*/
+  div.cards {
+    column-count: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+
   /*----------- FOOTER --------------*/ }
 /* end of media query */
 

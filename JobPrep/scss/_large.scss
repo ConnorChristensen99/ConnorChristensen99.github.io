@@ -2,7 +2,26 @@
 
 /*----------- BODY --------------*/
 
-
+.bottom {
+    width: 53rem;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "infra tech ad" 
+        "live live ad";
+    div {
+        p {
+            font-size: 10pt;
+        }
+    }
+}
+.growth-btn {
+    width: 150px;
+    height: 30px;
+}
+.growth-text {
+    font-size: 10pt;
+}
 
 /*----------- HEADER --------------*/
 
@@ -34,7 +53,13 @@ nav ul li {
 /*----------- MAIN --------------*/
 
 
+div.cards {
+    column-count: 4;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
 
 /*----------- FOOTER --------------*/
     
