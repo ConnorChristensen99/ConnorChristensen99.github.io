@@ -1,10 +1,8 @@
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5879400&appid=518946f0e1b1450c3dece17c18406782&units=imperial";
+const d = new Date();
 
-fetch (apiURL)
-.then ((response) => response.json())
-.then ((weatherInfo) => {
-  
-    const myweekday = new Array(7);
+const todayDayNumber = d.getDay();
+
+const myweekday = new Array(7);
     myweekday[0] = "Sunday";
     myweekday[1] = "Monday";
     myweekday[2] = "Tuesday";
@@ -13,54 +11,45 @@ fetch (apiURL)
     myweekday[5] = "Friday";
     myweekday[6] = "Saturday";
 
-    
-    const d = new Date();
-    const todayDayNumber = d.getDay();
+    const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5879400&appid=518946f0e1b1450c3dece17c18406782&units=imperial";
 
-    let forecastDayNumber = todayDayNumber;
+fetch (apiURL)
+.then((response) => response.json())
+.then((weatherInfo) => {
+    console.log(weatherInfo);
 
-    console.log(forecastDayNumber);
+    document.getElementById('city').textContent = weatherInfo.city.name;
+    let mylist = weatherInfo.list;
+        let forecastDayNumber = todayDayNumber;
+        for (i= 0; i < mylist.length; i++) {
+            let time = mylist[i].dt_txt;
+            if (time.includes("18:00:00")) {
+                forecastDayNumber +=1;
+                if (forecastDayNumber === 7){forecastDayNumber = 0;}
 
-    for (i=0; i < weatherInfo.length; i++) {
+                let theDayName = document.createElement('span');
+                theDayName.textContent = myweekday[forecastDayNumber];
 
-        var time =weatherInfo[i].dt_text;
+                let theTemp = document.createElement("p");
+                theTemp.textContent = weatherInfo.list[i].main.temp + "\xb0";
 
+                const iconcode = weatherInfo.list[i].weather[0].icon;
+                const icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
+                let theIcon = document.createElement("img");
+                theIcon.src=icon_path;
 
+                let theDay = document.createElement("div");
+                theDay.setAttribute('id', 'cards')
+                theDay.appendChild(theDayName);
+                theDay.appendChild(theTemp);
+                theDay.appendChild(theIcon);
 
-        if (time.includes('21:00:00')) {
-            forecastDayNumber += 1;
-
-            if (forecastDayNumber === 7) {
-                forecastDayNumber = 0;
+                document.getElementById("container").appendChild(theDay);
             }
-
-            let theDayName = document.createElement("span");
-            theDayName.textContent = weekday[forecastDayNumber];
-            console.log(">"+ weekday[forecastDayNumber]);
-
-            
-            let theTemp = document.createElement("p");
-            theTemp.textContent = weatherInfo.list[i].main.temp + "\xB0";
-
-            let iconcode = weatherInfo.list[i].weather[0].icon;
-            let iconPath= "//openweathermap.org/img/wn/" + iconcode + "@2x.png";
-            let theIcon = document.createElement("img");
-            theIcon.src = iconPath;
-
-
-            let theDay = document.createElement("div");
-            theDay.appendChild(theDayName);
-            theDay.appendChild(theTemp);
-            theDay.appendChild(theIcon);
-
-            document.getElementById('weatherforecast').appendChild(theDay);
-
         }
 
-
-    }
-
-
-
+    
 });
+
+
 

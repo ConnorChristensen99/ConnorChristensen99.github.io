@@ -1,0 +1,78 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: rgb(171, 230, 138);
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+div#container {
+    display: grid;
+    grid-template-columns: 1 fr;
+    justify-content: center;
+
+    #cards {
+        background-color: rgb(171, 230, 138);
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #cards p {
+        font-weight: bold;
+    }
+
+    #cards span {
+        font-weight: bolder;
+        color: black;
+    }
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
